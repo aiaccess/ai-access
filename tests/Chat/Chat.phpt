@@ -76,7 +76,7 @@ class TestChat extends Chat
 
 // Chat abstract class functionality tests
 test('Chat message history management', function () {
-	$chat = new TestChat();
+	$chat = new TestChat;
 
 	// Initially empty
 	Assert::count(0, $chat->getMessages());
@@ -100,7 +100,7 @@ test('Chat message history management', function () {
 
 
 test('Chat system instruction', function () {
-	$chat = new TestChat();
+	$chat = new TestChat;
 	$instruction = 'You are a helpful AI assistant.';
 
 	// Test fluent interface
@@ -110,7 +110,7 @@ test('Chat system instruction', function () {
 
 
 test('Chat sendMessage basic flow', function () {
-	$chat = new TestChat();
+	$chat = new TestChat;
 
 	// Mock a response
 	$mockResponse = Mockery::mock(Response::class);
@@ -129,7 +129,7 @@ test('Chat sendMessage basic flow', function () {
 
 
 test('Chat sendMessage with null input continues conversation', function () {
-	$chat = new TestChat();
+	$chat = new TestChat;
 
 	// First add a user message manually
 	$chat->addMessage('Initial user message', Role::User);
@@ -150,7 +150,7 @@ test('Chat sendMessage with null input continues conversation', function () {
 
 
 test('Chat sendMessage error handling', function () {
-	$chat = new TestChat();
+	$chat = new TestChat;
 
 	// Configure error behavior
 	$errorMessage = 'API Error';
@@ -169,7 +169,7 @@ test('Chat sendMessage error handling', function () {
 
 
 test('Chat sendMessage with null response text', function () {
-	$chat = new TestChat();
+	$chat = new TestChat;
 
 	// Mock a response with null text (e.g., content filtered)
 	$mockResponse = Mockery::mock(Response::class);

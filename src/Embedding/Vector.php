@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace AIAccess\Embedding;
 
 use AIAccess\LogicException;
+use function array_reduce, array_values, count, pack, sqrt, unpack;
 
 
 /**

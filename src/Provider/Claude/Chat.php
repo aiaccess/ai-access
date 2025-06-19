@@ -12,6 +12,7 @@ namespace AIAccess\Provider\Claude;
 use AIAccess;
 use AIAccess\Chat\Role;
 use AIAccess\ServiceException;
+use function array_filter, array_flip, array_intersect_key, array_merge;
 
 
 /**

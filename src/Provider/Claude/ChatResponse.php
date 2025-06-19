@@ -11,6 +11,7 @@ namespace AIAccess\Provider\Claude;
 
 use AIAccess\Chat;
 use AIAccess\Chat\FinishReason;
+use function implode, is_array;
 
 
 /**
