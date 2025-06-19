@@ -11,6 +11,7 @@ namespace AIAccess\Provider\OpenAI;
 
 use AIAccess;
 use AIAccess\Chat\Role;
+use function array_filter, array_merge;
 
 
 /**

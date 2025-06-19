@@ -11,6 +11,7 @@ namespace AIAccess\Provider\DeepSeek;
 
 use AIAccess;
 use AIAccess\Http;
+use function is_array, rtrim;
 
 
 /**

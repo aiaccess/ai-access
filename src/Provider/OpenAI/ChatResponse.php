@@ -11,6 +11,7 @@ namespace AIAccess\Provider\OpenAI;
 
 use AIAccess\Chat;
 use AIAccess\Chat\FinishReason;
+use function implode, is_array, is_string;
 
 
 /**

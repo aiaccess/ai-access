@@ -11,6 +11,7 @@ namespace AIAccess\Http;
 
 use AIAccess\CommunicationException;
 use AIAccess\Helpers;
+use function is_array;
 
 
 /**

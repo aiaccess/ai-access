@@ -12,6 +12,7 @@ namespace AIAccess\Provider\Claude;
 use AIAccess;
 use AIAccess\Batch\Status;
 use AIAccess\Chat\Message;
+use function explode, implode, is_array, trim;
 
 
 /**

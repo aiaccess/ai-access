@@ -11,6 +11,7 @@ namespace AIAccess\Provider\Claude;
 
 use AIAccess;
 use AIAccess\Http;
+use function array_filter, http_build_query, is_array, rtrim, str_contains;
 
 
 /**

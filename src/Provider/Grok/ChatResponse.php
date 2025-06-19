@@ -11,6 +11,7 @@ namespace AIAccess\Provider\Grok;
 
 use AIAccess\Chat;
 use AIAccess\Chat\FinishReason;
+use function is_array;
 
 
 /**
