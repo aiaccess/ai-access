@@ -70,8 +70,3 @@ function curl_getinfo($ch, $option = null)
 	}
 	return null;
 }
-
-
-function curl_close($ch)
-{
-}
