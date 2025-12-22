@@ -55,11 +55,7 @@ final class CurlClient implements Client
 	): Response
 	{
 		$ch = $this->create($payload, $headers, $url, $method);
-		try {
-			return $this->execute($ch);
-		} finally {
-			curl_close($ch);
-		}
+		return $this->execute($ch);
 	}
 
 
